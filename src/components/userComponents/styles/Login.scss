@@ -1,0 +1,77 @@
+.login {
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    margin: auto -16px;
+    background-color: #000000;
+  
+    div {
+      background-color: #1f1d1d;
+      padding: 20px;
+      width: 30vw;
+      padding-left: 25px;
+        
+      form {
+        display: grid;
+        gap: 15px;
+  
+        label {
+          font-size: 14px;
+          margin-bottom: 5px;
+          color: #ffffff;
+        }
+  
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          box-sizing: border-box;
+          background-color: #464444;
+          color: white;
+        }
+  
+        button {
+          width: 30%;
+          padding: 10px;
+          background-color: transparent;
+          color: #fff;
+          border: solid 2px white;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          margin-top: 2em;
+  
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+          }
+        }
+
+        .registerlink{
+          padding: 0px;
+          margin: 0px;
+          color: white;
+          font-size: 0.9em;
+
+          a{
+            color: white;
+            text-decoration: underline;
+            font-size: 0.9em;
+
+            &:hover{
+              color: #868383;
+            }
+          }
+        }
+      }
+    }
+
+    .imagediv{
+        background-image: url(../../../images/background.jpeg);
+        background-size: cover;
+        width: 70vw;
+    }
+}
+  

@@ -1,0 +1,48 @@
+.container {
+
+    display: flex;
+    padding: 10px;
+
+    .card {
+
+        height: 70vh;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: white;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+        img {
+            border-radius: 10px 10px 0 0 ;
+            height: 16em;
+            width: 17em;
+        }
+
+        .content{
+            margin-left: 5px;
+            padding: 0;
+
+            .title{
+                font-weight: 700;
+                font-size: 1.5em;
+                margin: 0;
+            }
+
+            .description{
+                margin: 0;
+                margin-top: 5px;
+            }
+
+            .price{
+                font-weight: 600;   
+                margin: 0;
+                margin-top: 7px;
+            }
+            .stars{
+                color: white;
+                font-size: 1.2em;   
+            }
+        }
+    }
+
+}

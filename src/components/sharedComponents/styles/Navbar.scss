@@ -1,0 +1,136 @@
+.navbar {
+
+    >nav {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        background-color: rgb(15, 14, 14);
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 1.1em;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // position: fixed;
+        // z-index: +1;
+
+        >.header {
+            text-align: left;
+            margin-left: 1.5em;
+
+            >h1 {
+                font-family: 'Arvo', serif;
+                font-weight: 200;
+
+                >a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: font-size 0.3s ease;
+                    font-size: 1.5em;
+
+                    &:hover {
+                        color: rgb(236, 236, 236);
+                        font-size: 1.6em;
+                    }
+                }
+            }
+        }
+
+        >ul {
+            >li {
+                list-style: none;
+                display: inline;
+                color: white;
+                padding: 5px;
+            }
+        }
+
+        >.loginbtndiv,
+        .navlist,
+        .searchbardiv {
+            display: flex;
+            align-items: center;
+        }
+
+        >.loginbtndiv {
+            margin-right: 5px;
+            width: 6em;
+
+            >button {
+                list-style: none;
+                display: flex;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 10px;
+                color: white;
+                padding: 6px;
+                margin-left: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+        }
+
+        .loggedinstuff {
+            margin-right: 5px;
+            padding: 5px;
+
+            >button {
+                list-style: none;
+                display: flex;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 10px;
+                color: white;
+                padding: 6px;
+                margin-left: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                margin-left: 3px;
+                font-size: 1.5em;
+                width: 2em;
+            }
+
+        }
+
+        >.navlist {
+            margin-left: 50px;
+            margin: auto -16px;
+
+            >ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+
+                >li {
+                    >a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.2em;
+                        margin-left: 2em;
+                        transition: font-size 0.3s ease;
+
+                        &:hover {
+                            font-size: 1.4em;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

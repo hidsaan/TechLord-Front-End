@@ -1,0 +1,14 @@
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    .card{
+        background-color: gray;
+        border-radius: 10px;
+        margin-left: 1.5em;
+
+    }
+}

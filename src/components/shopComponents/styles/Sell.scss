@@ -1,0 +1,112 @@
+.sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -16px;
+    background-image: url(../../../images/blurbg.png);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .productform {
+        background-color: #1f1d1d;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 80vh;
+
+        h1{
+            margin-top: 0px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+            margin: 0px;
+            display: flex;
+
+            .addpicture {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                height: 4.5em;
+                width: 25em;
+                align-items: center;
+                justify-content: center;
+                box-shadow: none;
+                margin-top: 7em;
+
+            }
+
+            #fileinput {
+                display: none;
+            }
+
+            // .plus {
+            //     display: inline-block;
+            //     border: 1px solid #ccc;
+            //     border-radius: 5px;
+            //     text-align: center;
+            //     padding: 2px;
+            //     font-size: 0.9em;
+            //     cursor: pointer;
+                
+            //     &:hover {
+            //         background-color: #f0f0f0;
+            //         color: #000000;
+            //     }
+            // }
+
+            label {
+                color: white;
+                padding-right: 4px;
+
+                .picture {
+                    height: 10em;
+                    width: 10em;
+                    border-radius: 15px;
+                }
+
+                input {
+                    border: none;
+                    width: 95%;
+                    border-bottom: 1px solid white;
+                    background-color: #1f1d1d;
+                    color: wheat;
+                    margin-bottom: 1.5em;
+                }
+
+                button {
+                    color: white;
+                    background-color: black;
+                    border: 1px solid white;
+                }
+
+                .clicked {
+                    color: black;
+                    background-color: white;
+                }
+
+            }
+
+            button {
+                color: white;
+                background-color: inherit;
+                border: 1px solid white;
+                padding: 10px;
+                border-radius: 7px;
+
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
+            }
+
+        }
+    }
+}

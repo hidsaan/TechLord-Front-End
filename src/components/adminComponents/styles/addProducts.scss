@@ -1,0 +1,41 @@
+.addproduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -16px;
+    background-image: url(../../../images/blurbg.png);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .productform {
+        background-color: #1f1d1d;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    justify-content: center;
+        width: 70vw;
+        height: 70vh;
+
+        form {
+            display: grid;
+            gap: 15px;
+
+            label{
+                color: white;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid white;
+                    background-color: #1f1d1d;
+                    color: wheat;
+                }
+            }
+        }
+    }
+
+}
