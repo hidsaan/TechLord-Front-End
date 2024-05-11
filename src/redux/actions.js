@@ -6,13 +6,14 @@ export const getAllProducts = () => async (action) => {
       type: "request",
     });
 
-    const { data } = await axios.get("/user/getAllProducts", {});
+    const { data } = await axios.get("http://localhost:4000/user/getAllProducts");
 
     action({
       type: "success",
       message: data.message,
       Payload: data.products,
     });
+    
   } catch (error) {
     action({
       type: "error",
@@ -27,7 +28,7 @@ export const addProduct = (formData) => async (action) => {
       type: "Request",
     });
 
-    const { data } = await axios.post("/admin/addProduct", formData);
+    const { data } = await axios.post("http://localhost:4000/admin/addProduct", formData);
 
     action({
       type: "Success",

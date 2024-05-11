@@ -6,57 +6,25 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 import { useDispatch, useSelector } from "react-redux";
 import getAllProducts from "../../redux/actions";
-import IsAuthenticated from '../authorization/auth';
-import axios from 'axios';
 
 const Shop = () => {
 
-  // const dispatch = useDispatch();
-  // const loading = useSelector((state) => state.getAllProducts.loading);
+  const dispatch = useDispatch();
+  const loading = useSelector((state) => state.getproducts.loading);
 
-  // const products = useSelector((state) => state.getAllProducts.products);
-
-  // useEffect(() => {
-  //   dispatch(getAllItems());
-  // }, [dispatch]);
-
-  IsAuthenticated();
-
-  const [rating, setRating] = useState([]);
-  const [products, setProducts] = useState([]);
-  const [noItem, setNoItem] = useState("");
-  const token = localStorage.getItem("token")
-
-
-  const fetchData = useCallback(async () => {
-    try {
-      const response = await axios.get("http://localhost:4000/user/getAllProducts" ,
-       {
-        headers : {
-          token : token
-        }
-       }
-      );
-      //console.log(response);
-
-      if (response.data.message === "Products displayed") {
-        setProducts(response.data.items);
-        setLoading(false);
-        if (response.data.items.length === 0) {
-          setNoItem("Shop Empty");
-        }
-      } else {
-        toast.error("Something Wrong Happened");
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  }, []);
+  const products = useSelector((state) => state.getproducts.products);
 
   useEffect(() => {
-    fetchData();
-    
-  }, [fetchData]);
+    dispatch(getAllProducts());
+    if (products && products.length === 0) {
+      setNoItem("Oops! Nothing To See");
+    }
+  }, [dispatch]);
+
+  const [rating, setRating] = useState([]);
+  const [cartproducts, setCartProducts] = useState([]);
+  const [noItem, setNoItem] = useState("");
+  const token = localStorage.getItem("token")
 
   
   return (

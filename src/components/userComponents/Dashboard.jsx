@@ -45,7 +45,6 @@ const Dashboard = () => {
     return (
 
         <>
-
             <div className="carousel">
                 <button onClick={prevSlide}><FaArrowLeft /></button>
                 <div style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -72,7 +71,6 @@ const Dashboard = () => {
                         <p className='carddes'>{card.description}</p>
                         <button onClick={() => addProductToCart(card)}>Add To Cart</button>
                     </div>))}
-
                 </div>
 
                 <div className="headings">

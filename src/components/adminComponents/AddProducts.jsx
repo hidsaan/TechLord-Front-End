@@ -11,8 +11,6 @@ const AddProducts = () => {
     const loading =useSelector((state) => state.addproducts.loading )
     const message =  useSelector((state) => state.addproducts.message);
 
-    
-
     const [image, setImage] = useState(null);
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
