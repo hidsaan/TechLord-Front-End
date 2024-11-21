@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+##TechLord: The Ultimate E-Commerce Platform for Technology Enthusiasts
+##Project by: Hidsaan Majeed
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Description:
+TechLord is a comprehensive e-commerce platform designed for technology enthusiasts. It provides users with the ability to buy and sell new and used tech products while staying updated with the latest technological news through an integrated news API. The platform focuses on security, user-friendly design, and seamless functionality.
 
-## Available Scripts
+##Table of Contents:
+-Description
+-Features
+-Technologies Used
+-Installation
+-Usage
+-Testing
+-Future Enhancements
 
-In the project directory, you can run:
+##Features:
+-Buying and Selling: Easily browse, search, and filter tech products.
+-Tech News Integration: Stay updated with the latest tech news from an external API.
+-Secure User Authentication: Sign-up, login, and password management secured with bcrypt and JWT tokens.
+-Admin Management: Admins can manage products, users, and orders using Redux.
+-Image Uploads: Secure storage using Cloudinary and Multer middleware.
+-Password Recovery: Secure email verification using Nodemailer.
+-Notifications: User-friendly notifications with React Toastify.
 
-### `npm start`
+##Technologies Used:
+##Frontend:
+-React.js: Dynamic and responsive user interfaces.
+-HTML5 & SASS: Clean and consistent styling.
+##Backend:
+-Express.js: Server-side logic and APIs.
+-Node.js: Backend framework for scalable applications.
+##Database:
+-MongoDB: Efficient data storage and retrieval.
+##Tools & Libraries:
+-Axios: Handling HTTP requests.
+-React Router DOM: Navigation and routing.
+-Redux: State management for admin components.
+-Dotenv: Secure environment variable storage.
+-Postman: Backend API testing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##Installation:
+##Prerequisites:
+Install Node.js and MongoDB.
+##Steps:
+#Clone the Repositories:
+-git clone https://github.com/hidsaan/TechLord-Back-End.git
+-git clone https://github.com/hidsaan/TechLord-Front-End.git
+#Backend Setup: 
+-Navigate to the backend directory
+-cd TechLord-Back-End
+#Install dependencies:
+-npm install
+#Start the server:
+-npm run dev
+#Frontend Setup:
+-Navigate to the frontend directory
+-cd TechLord-Front-End
+#Install dependencies:
+-npm install
+#Start the application:
+-npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##Usage:
+Launch the app in your browser at http://localhost:3000.
+Register or log in to explore the available features.
+Admins can manage users, products, and orders from the admin dashboard.
 
-### `npm test`
+##Testing:
+Backend API testing is performed using Postman.
+Frontend testing includes responsiveness and feature functionality checks.
+-Run unit tests for the frontend components:
+npm run test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Future Enhancements:
+-Chatbot Integration: For tech discussions.
+-Expert Advice Section: Personalized recommendations.
+-Service Center Locator: Help users find nearby service centers.
+-Mobile Application: Development for accessibility on mobile devices.
